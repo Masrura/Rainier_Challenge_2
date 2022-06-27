@@ -5,7 +5,7 @@ const Products = () => {
     const [products, setProducts] = useProducts();
 
     return (
-        <div className='grid grid-cols-2 gap-4'>
+        <div className='grid md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 gap-4'>
             {
                 products.slice(0,25).map(product =>
                    <Product product = {product}></Product>
